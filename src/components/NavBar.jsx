@@ -41,7 +41,7 @@ const NavBar = () => {
     { link: "About", path: "/about" },
     { link: "Shop", path: "/shop" },
     { link: "Sell Your Book", path: "/admin/dashboard" },
-    { link: "Blog", path: "/blog" },
+    // { link: "Blog", path: "/blog" },
   ];
 
   return (
@@ -65,7 +65,7 @@ const NavBar = () => {
             {/* nav items for large devices */}
 
             {/* using map items function */}
-            <ul className="md:flex space-x-12 hidden ">
+            <ul className="md:flex space-x-12 hidden font-semibold">
               {navItems.map(({ link, path }) => (
                 <Link
                   key={path}
@@ -78,9 +78,9 @@ const NavBar = () => {
             </ul>
 
             {/* btn for lg devices */}
-            {/* changed today 6/9/2024 at 5:4 PM */}
+
             {/* <div className="md:hidden"> */}
-            <div className="">
+            <div className="lg:hidden">
               <button className="space-x-12 hidden lg:flex items-center ">
                 <FaBarsStaggered className="w-5 hover:text-blue-700" />
               </button>
